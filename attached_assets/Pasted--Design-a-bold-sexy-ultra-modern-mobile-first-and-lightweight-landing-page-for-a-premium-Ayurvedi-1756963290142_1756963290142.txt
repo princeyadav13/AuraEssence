@@ -1,0 +1,23 @@
+“Design a bold, sexy, ultra-modern, mobile-first and lightweight landing page for a premium Ayurvedic brand called ‘MellowMoon’.
+
+Header: Minimal top bar with phone +012 345 6789 and email info@example.com. Sticky navigation with Logo + menu links (Home, About, Products, Educate Yourself, Contact). Clean hamburger menu on mobile.
+
+Hero Section: Full-width, high-resolution background with soft feminine colors (blush, cream, gold accents). Tagline: ‘Mellow the Pain. Embrace Your Moon.’ Subtitle: ‘A luxurious Ayurvedic cream that transforms period pain into a moment of calm, care, and connection with your body.’ Large call-to-action button “Know More”.
+
+Best Sellers Grid: Four product cards (Mellow Moon Cream ₹499, Glow+ Oil ₹599, Gold Glow Serum ₹699, Essence Boost ₹399). Show photo, short description, rating ★★★★★, “Add to Cart” button. Smooth hover effect (zoom-in image, subtle shadow).
+
+Story / Education Section: Headline ‘Your Body Knows. Ayurveda Listens.’ Two-column layout with image + text describing natural ingredients, fast absorbing, toxin-free. Soft scroll animations.
+
+Testimonial Section: Card layout with photo, star rating, quote from Ritika Verma.
+
+Ingredients Section: Stylish icon grid for Lavender Oil, Peppermint Oil, Eucalyptus Oil, Ajwain Oil, Dashmool Extract, Sesame Oil.
+
+How It Works / Ritual Section: Three-step horizontal cards — Massage, Melt, Breathe — with simple icons.
+
+FAQ Accordion: Questions about safety, stain, speed, smell, compatibility with heating pad.
+
+Footer: Address “005,006 – Jay Vijay Nagar…” + phone +012 345 67890 + email care@mellowmoon.in. Quick links (Home, About Us, Our Products, FAQs, Contact Us, Shop & Info, Cart, Register, Login, Privacy Policy, Terms & Conditions). Dark background with muted gold text.
+
+Style: Bold typography, lots of white space, soft gradients, smooth animations on hover/scroll. Optimized for speed (no heavy libraries), responsive grid/flexbox. Luxury + wellness vibe.
+
+Generate clean HTML, CSS and minimal JavaScript following this description.”
