@@ -32,17 +32,17 @@ export default function Testimonials() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="testimonials-title">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="testimonials-title">
             What Our Community Says
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="testimonials-subtitle">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="testimonials-subtitle">
             Real stories from women who've embraced natural period care.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-card rounded-2xl p-8 shadow-sm" data-testid={`testimonial-${testimonial.id}`}>
+            <div key={testimonial.id} className="bg-card rounded-2xl p-8 shadow-sm card-hover" data-testid={`testimonial-${testimonial.id}`}>
               <div className="star-rating text-xl mb-4 flex" data-testid={`testimonial-rating-${testimonial.id}`}>
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-current text-yellow-400" />
@@ -52,12 +52,14 @@ export default function Testimonials() {
                 "{testimonial.text}"
               </p>
               <div className="flex items-center">
-                <img 
-                  src={testimonial.image}
-                  alt={`${testimonial.name} testimonial`} 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                  data-testid={`testimonial-image-${testimonial.id}`}
-                />
+                <div className="image-hover w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img 
+                    src={testimonial.image}
+                    alt={`${testimonial.name} testimonial`} 
+                    className="w-full h-full object-cover transition-transform duration-500"
+                    data-testid={`testimonial-image-${testimonial.id}`}
+                  />
+                </div>
                 <div>
                   <div className="font-semibold text-card-foreground" data-testid={`testimonial-name-${testimonial.id}`}>
                     {testimonial.name}

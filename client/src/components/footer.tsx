@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6" data-testid="footer-logo">
@@ -65,17 +65,17 @@ export default function Footer() {
         {/* Social & Copyright */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-6 mb-4 md:mb-0" data-testid="footer-social">
-              <a href="#" className="text-gray-300 hover:text-accent transition-colors" data-testid="social-instagram">
+            <div className="flex justify-center md:justify-start space-x-6 mb-4 md:mb-0" data-testid="footer-social">
+              <a href="#" className="text-gray-300 hover:text-accent transition-all duration-300 hover:scale-125 hover:rotate-12" data-testid="social-instagram">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-accent transition-colors" data-testid="social-facebook">
+              <a href="#" className="text-gray-300 hover:text-accent transition-all duration-300 hover:scale-125 hover:rotate-12" data-testid="social-facebook">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-accent transition-colors" data-testid="social-twitter">
+              <a href="#" className="text-gray-300 hover:text-accent transition-all duration-300 hover:scale-125 hover:rotate-12" data-testid="social-twitter">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-accent transition-colors" data-testid="social-youtube">
+              <a href="#" className="text-gray-300 hover:text-accent transition-all duration-300 hover:scale-125 hover:rotate-12" data-testid="social-youtube">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>

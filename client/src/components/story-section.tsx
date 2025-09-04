@@ -4,13 +4,13 @@ export default function StorySection() {
   return (
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-8" data-testid="story-title">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-8" data-testid="story-title">
               Your Body Knows.<br />
               <span className="text-primary">Ayurveda Listens.</span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="story-description">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed" data-testid="story-description">
               For centuries, Ayurveda has understood the delicate balance of feminine wellness. Our toxin-free formulations honor this ancient wisdom while embracing modern science.
             </p>
             <div className="space-y-6">
@@ -43,11 +43,11 @@ export default function StorySection() {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative image-hover rounded-3xl">
             <img 
               src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Natural skincare application" 
-              className="rounded-3xl shadow-2xl w-full"
+              className="rounded-3xl shadow-2xl w-full transition-all duration-500"
               data-testid="story-image"
             />
             <div className="absolute -bottom-6 -left-6 bg-background rounded-2xl p-6 shadow-xl" data-testid="rating-badge">

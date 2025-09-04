@@ -29,26 +29,26 @@ export default function HowItWorks() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="how-it-works-title">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="how-it-works-title">
             Your Healing Ritual
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="how-it-works-subtitle">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="how-it-works-subtitle">
             Three simple steps to transform your period experience into a moment of self-care.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step) => {
             const Icon = step.icon;
             return (
-              <div key={step.id} className="text-center" data-testid={`step-${step.id}`}>
-                <div className={`w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-r ${step.gradient} flex items-center justify-center`}>
-                  <Icon className="w-12 h-12 text-background" />
+              <div key={step.id} className="text-center group" data-testid={`step-${step.id}`}>
+                <div className={`w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-r ${step.gradient} flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 shadow-lg group-hover:shadow-2xl`}>
+                  <Icon className="w-12 h-12 text-background transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-4" data-testid={`step-title-${step.id}`}>
+                <h3 className="font-serif text-2xl font-semibold text-foreground mb-4 transition-colors duration-300 group-hover:text-primary" data-testid={`step-title-${step.id}`}>
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed" data-testid={`step-description-${step.id}`}>
+                <p className="text-muted-foreground leading-relaxed transition-colors duration-300 group-hover:text-foreground" data-testid={`step-description-${step.id}`}>
                   {step.description}
                 </p>
               </div>

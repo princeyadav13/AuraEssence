@@ -10,17 +10,17 @@ export default function Hero() {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight" data-testid="hero-title">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight" data-testid="hero-title">
             Mellow the Pain.<br />
-            <span className="text-primary">Embrace Your Moon.</span>
+            <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Embrace Your Moon.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed" data-testid="hero-subtitle">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed" data-testid="hero-subtitle">
             A luxurious Ayurvedic cream that transforms period pain into a moment of calm, care, and connection with your body.
           </p>
-          <button className="bg-foreground text-background px-12 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg" data-testid="hero-cta">
+          <button className="glow-button text-primary-foreground px-12 py-4 rounded-full text-lg font-semibold shadow-lg" data-testid="hero-cta">
             Know More
           </button>
-          <div className="mt-16 flex justify-center items-center space-x-8 text-muted-foreground">
+          <div className="mt-16 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 text-muted-foreground">
             <div className="text-center" data-testid="stat-natural">
               <div className="text-2xl font-bold text-foreground">100%</div>
               <div className="text-sm">Natural</div>

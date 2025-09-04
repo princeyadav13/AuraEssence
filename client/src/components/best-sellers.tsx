@@ -52,22 +52,22 @@ export default function BestSellers() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="bestsellers-title">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="bestsellers-title">
             Best Sellers
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="bestsellers-subtitle">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto" data-testid="bestsellers-subtitle">
             Discover our most loved products, crafted with pure Ayurvedic ingredients for your wellness journey.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {products.map((product) => (
             <div key={product.id} className="card-hover bg-card rounded-2xl shadow-sm overflow-hidden" data-testid={`product-card-${product.id}`}>
-              <div className="overflow-hidden">
+              <div className="image-hover overflow-hidden">
                 <img 
                   src={product.image}
                   alt={product.name} 
-                  className="w-full h-48 object-cover transition-transform duration-300"
+                  className="w-full h-48 object-cover transition-transform duration-500"
                   data-testid={`product-image-${product.id}`}
                 />
               </div>
@@ -88,15 +88,15 @@ export default function BestSellers() {
                     ({product.reviews} reviews)
                   </span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-foreground" data-testid={`product-price-${product.id}`}>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
+                  <span className="text-xl sm:text-2xl font-bold text-foreground" data-testid={`product-price-${product.id}`}>
                     ₹{product.price}
                   </span>
                   <button 
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all flex items-center space-x-2 ${
+                    className={`px-4 py-2 rounded-full text-sm font-medium flex items-center justify-center space-x-2 w-full sm:w-auto ${
                       addedToCart === product.id 
-                        ? "bg-green-500 text-white" 
-                        : "bg-primary text-primary-foreground hover:bg-opacity-90"
+                        ? "bg-green-500 text-white pulse-hover" 
+                        : "sexy-button text-primary-foreground"
                     }`}
                     onClick={() => handleAddToCart(product.id)}
                     data-testid={`add-to-cart-${product.id}`}

@@ -50,10 +50,10 @@ export default function Ingredients() {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="ingredients-title">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="ingredients-title">
             Pure Ayurvedic Ingredients
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="ingredients-subtitle">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="ingredients-subtitle">
             Each ingredient is carefully selected for its therapeutic properties and gentle effectiveness.
           </p>
         </div>
@@ -62,9 +62,9 @@ export default function Ingredients() {
           {ingredients.map((ingredient) => {
             const Icon = ingredient.icon;
             return (
-              <div key={ingredient.id} className="ingredient-card rounded-2xl p-8 text-center" data-testid={`ingredient-${ingredient.id}`}>
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-${ingredient.color} flex items-center justify-center`}>
-                  <Icon className="w-8 h-8 text-primary-foreground" />
+              <div key={ingredient.id} className="ingredient-card rounded-2xl p-8 text-center group" data-testid={`ingredient-${ingredient.id}`}>
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-${ingredient.color} flex items-center justify-center transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 shadow-lg`}>
+                  <Icon className="w-8 h-8 text-primary-foreground transition-transform duration-500 group-hover:scale-110" />
                 </div>
                 <h4 className="font-semibold text-lg text-foreground mb-3" data-testid={`ingredient-name-${ingredient.id}`}>
                   {ingredient.name}

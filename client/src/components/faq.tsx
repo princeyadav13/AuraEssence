@@ -44,19 +44,19 @@ export default function FAQ() {
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="faq-title">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="faq-title">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground" data-testid="faq-subtitle">
+          <p className="text-lg sm:text-xl text-muted-foreground" data-testid="faq-subtitle">
             Everything you need to know about MellowMoon cream.
           </p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq) => (
-            <div key={faq.id} className="bg-card rounded-2xl overflow-hidden" data-testid={`faq-item-${faq.id}`}>
+            <div key={faq.id} className="bg-card rounded-2xl overflow-hidden card-hover" data-testid={`faq-item-${faq.id}`}>
               <button 
-                className="w-full p-6 text-left flex justify-between items-center hover:bg-muted transition-colors"
+                className="w-full p-6 text-left flex justify-between items-center hover:bg-muted transition-all duration-300 nav-link"
                 onClick={() => toggleItem(faq.id)}
                 data-testid={`faq-question-${faq.id}`}
               >
